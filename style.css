@@ -63,6 +63,7 @@ img {
 .main-nav a:hover {
   background: var(--dark);
   color: var(--light);
+  transition: all .5s ease-in-out;
 }
 
 
@@ -91,6 +92,17 @@ img {
   border-radius: 0.5rem;
   opacity: 0.9;
 }
+
+.showcase .btn {
+  margin-top: 1rem;
+}
+
+.showcase .btn:hover {
+  color: var(--dark);
+  background: #fc5058;
+  transition: all .5s ease-in-out;
+}
+
 
 /* TOP-BOX */
 .top-box {
@@ -148,6 +160,22 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 2rem;
+}
+
+.info img {
+  box-shadow: var(--shadow);
+}
+
+/* PORTFOLIO */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
 }
 
 
