@@ -16,7 +16,7 @@ body {
   background: #4717f6;
   margin: 30px 50px;
   line-height: 1.4;
-  color: var(--light)
+  color: var(--light);
 }
 
 .btn {
@@ -38,12 +38,19 @@ img {
 }
 
 /* NAVIGATION */
+.main-nav {
+  background: var(--dark);
+}
+
 .main-nav ul {
   list-style: none;
   display: grid;
-  grid-gap: 20px;
-  padding: 0;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1;
+  grid-gap: 10px;
+  padding: 0 15px;
+  border-radius: 0.3rem;
+  grid-template-columns: repeat(5, 1fr);
+
 }
 
 
@@ -62,9 +69,33 @@ img {
 
 
 .main-nav a:hover {
-  background: var(--dark);
+  background: #fc5058;
   color: var(--light);
   transition: all .5s ease-in-out;
+}
+
+.main-nav
+.home {
+  display: grid;
+  grid-column: 1;
+}
+
+.main-nav
+.store {
+  display: grid;
+  grid-column: 2;
+}
+
+.main-nav 
+.help {
+  display: grid;
+  grid-column: 4;
+}
+
+.main-nav
+.login {
+  display: grid;
+  grid-column: 5;
 }
 
 
@@ -177,7 +208,7 @@ img {
 /* PORTFOLIO */
 .portfolio {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
